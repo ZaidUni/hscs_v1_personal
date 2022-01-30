@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Halal Slaughter Checker System v 1.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+
+    <link rel="stylesheet" href="../static/css/cover.css">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+</head>
+
+<body class="d-flex text-center text-white bg-dark">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-start mb-0">Halal Slaughter Checker System</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link active" aria-current="page" href="#">Main</a>
+                    <a class="nav-link" href="#">Features & Updates</a>
+                    <a class="nav-link" href="#">About Us</a>
+                </nav>
+            </div>
+        </header>
+
+        <br/>
+
+        <main class="px-3">
+            <img src="{{url_for('static', filename='SMSB Logo.png')}}" width="150" height="100" />
+            <h1>HSCS v 1.0</h1>
+            <p class="lead">Open your camera and automatically see check the status of the slaughtered animal.</p>
+            
+        </main>
+        <div>
+            <img src="{{url_for('video')}}" width="100%" alt="Please Enable Your Camera" />
+            &nbsp;
+            <p class="lead">If your image is detected, we will generate a QR code for you for future reference.</p>
+            <img src="../static/qrcode001.png" width="100%"/>
+            &nbsp;
+        </div>
+
+
+        <footer class="mt-auto text-white-50">
+            <p>Powered By <a href="https://www.semarakmotivasi.com/" class="text-white">Semarak Motivasi Sdn Bhd</a></p>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>
