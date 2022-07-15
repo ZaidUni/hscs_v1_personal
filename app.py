@@ -1,7 +1,7 @@
 from flask import Flask, render_template, Response, jsonify
 import cv2
 from flask.helpers import url_for
-import tensorflow.keras
+from tensorflow import keras as tensorflowkeras
 from PIL import Image, ImageOps
 import numpy as np
 import sqlite3
@@ -19,7 +19,7 @@ camera = cv2.VideoCapture(0)
 np.set_printoptions(suppress=True)
 
 # Load the model
-model = tensorflow.keras.models.load_model('keras_model.h5')
+model = tensorflowkeras.models.load_model('keras_model.h5')
 
 # Create the array of the right shape to feed into the keras model
 # The 'length' or number of images you can put into the array is
